@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=fallback">
+    <!-- style css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index.html" class="nav-link"><img src="dist/img/logo/square-logo.png">Công ty CP Đầu tư Xây dựng Công nghệ cao Việt Nam – VITC</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-danger navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <img src="dist/img/icon/img-icon.png">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-bg-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="./index.html" class="brand-link bg-ffffff">
+                <img src="dist/img/logo/Logo.svg" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">&nbsp;</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./files.html" class="nav-link">
+                                <img src="dist/img/icon/folder.png">
+                                <p>
+                                    Files
+                                    <span class="badge badge-info right">6</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-12">
+                            <h1 class="m-0">Scan tài liệu</h1>
+                        </div>
+                        <!-- /.col -->
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p>SỞ KẾ HOẠCH VÀ ĐẦU TƯ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM THÀNH PHỐ HỒ CHÍ MINH Độc lập - Tự do - Hạnh phúc PHÒNG ĐĂNG KÝ KINH DOANH GIẤY CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP CÔNG TY CỔ PHẦN Mã số doanh nghiệp : 0309829579 Đăng ký
+                                lần đầu : ngày 11 tháng 03 năm 2010 Đăng ký thay đổi lần thứ 7 , ngày 29 tháng 11 năm 2017 1. Tên công ty Tên công ty viết bằng tiếng Việt : CÔNG TY CỔ PHẦN TRUNG TÂM CHĂM SÓC SỨC KHỎE CỘNG ĐỒNG CHẠC Tên công ty viết bằng
+                                tiếng nước ngoài : CHẮC COMMUNITY HEALTHCARE CENTER CORPORATION Tên công ty viết tắt : TRUNG TÂM CHĂM SÓC SỨC KHỎE CỘNG ĐỒNG CHẠC 2. Địa chỉ trụ sở chính 110A Ngô Quyền , Phường 08 , Quận 5 , Thành phố Hồ Chí Minh , Việt
+                                Nam Điện thoại : 0902714743 Fax : Email : Website : 3. Vốn điều lệ Vốn điều lệ : 8.000.000.000 đồng Bằng chữ : Tảm tỷ đồng Mệnh giá cổ phần : 10.000 đồng Tổng số cổ phần : 4. Người đại diện theo pháp luật của công ty *
+                                Họ và tên : NGÔ HỞN ĐÌNH Giới tính : Nam Chức danh : Giám đốc Sinh ngày : 25/07/1984 Dân tộc : Hoa Quốc tịch : Việt Nam Loại giấy tờ chứng thực cá nhân : Chứng minh nhân dân Số giấy chứng thực cá nhân : 023692354 Ngày cấp
+                                : 23/06/2005 Nơi cấp : Công an Thành phố Hồ Chí Minh Nơi đăng ký hộ khẩu thường trú ; 1442/46 đường 3/2 , Phường 2 , Quận 11 , Thành phố Hồ Chí Minh , Việt Nam Chỗ ở hiện tại : 1442/46 đường 3/2 , Phường 2 , Quận 11 , Thành
+                                phố Hồ Chí Minh , Việt Nam
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <div class="container-fluid">
+                                <!-- Small boxes (Stat box) -->
+                                <div class="row scan-detail">
+                                    <div class="col-md-12 margin-bottom-30">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Thông tin chung</h3>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body p-0">
+                                                <div class="row name-filter">
+                                                    <div class="col-3">Tên bộ lọc</div>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="txtFilter" placeholder="Giấy chứng nhận đăng ký kinh doanh">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card card-primary collapsed-card padding-row">
+                                            <div class="card-header bg-F5F5F5">
+                                                <h3 class="card-title">Chuỗi dữ liệu 1</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="maximize">
+                                                    <i class="fas fa-expand"></i>
+                                                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                                </div>
+                                                <!-- /.card-tools -->
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-3">Chọn kiểu dữ liệu * </div>
+                                                    <div class="col-9">
+                                                        <div class="form-group">
+                                                            <select class="form-control select2" style="width: 40%;">
+                                                              <option selected="selected">Text</option>
+                                                              <option>Text</option>
+                                                              <option>Text</option>
+                                                              <option>Text</option>
+                                                              <option>Text</option>
+                                                              <option>Text</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3">Keyword Start *</div>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="txtKeywordStart" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3">Keyword End</div>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="txtKeywordEnd" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3">Số dòng</div>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="txtRowNumber" placeholder="" style="width: 20%;">
+                                                    </div>
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="card collapsed-card">
+                                                                <div class="card-header" data-card-widget="collapse">
+                                                                    <h3 class="card-title"> Nâng cao</h3>
+
+                                                                    <div class="card-tools">
+                                                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i></button>
+                                                                    </div>
+                                                                    <!-- /.card-tools -->
+                                                                </div>
+                                                                <!-- /.card-header -->
+
+                                                                <div class="card-body">
+                                                                    <div class="row margin-15">
+                                                                        <div class="col-12 bg-F5F5F5 padding-10">Cuts</div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">Keyword Start </div>
+                                                                        <div class="col-9">
+                                                                            <input type="text" class="form-control" id="txtRowNumber" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">Keyword End</div>
+                                                                        <div class="col-9">
+                                                                            <input type="text" class="form-control" id="txtRowNumber" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row margin-15">
+                                                                        <div class="col-12 bg-F5F5F5 padding-10">Split</div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">Ký tự cần cắt </div>
+                                                                        <div class="col-9">
+                                                                            <input type="text" class="form-control" id="txtRowNumber" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">Vị trí chuỗi kí tự</div>
+                                                                        <div class="col-9">
+                                                                            <input type="text" class="form-control" id="txtRowNumber" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row margin-15">
+                                                                        <div class="col-12 bg-F5F5F5 padding-10">Replace</div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">Chuỗi kí tự cần loại bỏ </div>
+                                                                        <div class="col-9">
+                                                                            <input type="text" class="form-control" id="txtRowNumber" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /.card-body -->
+                                                            </div>
+                                                            <!-- /.card -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card card-primary collapsed-card">
+                                            <div class="card-header bg-F5F5F5">
+                                                <h3 class="card-title">Chuỗi dữ liệu 2</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="maximize">
+                                                    <i class="fas fa-expand"></i>
+                                                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                                </div>
+                                                <!-- /.card-tools -->
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                                The body of the card
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card card-primary collapsed-card">
+                                            <div class="card-header bg-F5F5F5">
+                                                <h3 class="card-title">Chuỗi dữ liệu 3</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="maximize">
+                                                    <i class="fas fa-expand"></i>
+                                                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                                </div>
+                                                <!-- /.card-tools -->
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                                The body of the card
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="div-add-data"><button type="submit" class="btn btn-add-data"><i class="fas fa-plus"></i> Thêm chuỗi dữ liệu</button></div>
+                                    </div>
+                                </div>
+                                <!-- /.row (main row) -->
+                            </div>
+                        </div>
+                        <!-- /.row (main row) -->
+                        <div class="col-md-12 margin-top-50">
+                            <div class="div-add-data">
+                                <button type="submit" class="btn btn-save-data" data-toggle="modal" data-target="#viewForm"><img src="dist/img/icon/view2.png" style="padding-right: 5px;"> Xem trước</button>
+                                <button type="submit" class="btn btn-save-data"><img src="dist/img/icon/save.png" style="padding-right: 5px;"> Lưu</button>
+                                <button type="submit" class="btn btn-next bg-2EB553"> Tiếp tục ></button></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer>
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!--viewForm-->
+    <div class="modal fade" id="viewForm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="dialog-view-form">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close btn-close-popup" data-dismiss="modal" aria-label="Close" style="background: #ffffff;">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    <div class="modal-body text-align-center">
+                        <section class="content">
+                            <div class="container-fluid">
+                                <!-- Small boxes (Stat box) -->
+
+                                <div class="row">
+                                    <div class="col-6 scan-pic">
+                                        <img src="dist/img/logo/pic.png"> </div>
+                                    <div class="col-6">
+                                        <p>SỞ KẾ HOẠCH VÀ ĐẦU TƯ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM THÀNH PHỐ HỒ CHÍ MINH Độc lập - Tự do - Hạnh phúc PHÒNG ĐĂNG KÝ KINH DOANH GIẤY CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP CÔNG TY CỔ PHẦN Mã số doanh nghiệp : 0309829579
+                                            Đăng ký lần đầu : ngày 11 tháng 03 năm 2010 Đăng ký thay đổi lần thứ 7 , ngày 29 tháng 11 năm 2017 1. Tên công ty Tên công ty viết bằng tiếng Việt : CÔNG TY CỔ PHẦN TRUNG TÂM CHĂM SÓC SỨC KHỎE CỘNG ĐỒNG CHẠC
+                                            Tên công ty viết bằng tiếng nước ngoài : CHẮC COMMUNITY HEALTHCARE CENTER CORPORATION Tên công ty viết tắt : TRUNG TÂM CHĂM SÓC SỨC KHỎE CỘNG ĐỒNG CHẠC 2. Địa chỉ trụ sở chính 110A Ngô Quyền , Phường 08 , Quận
+                                            5 , Thành phố Hồ Chí Minh , Việt Nam Điện thoại : 0902714743 Fax : Email : Website : 3. Vốn điều lệ Vốn điều lệ : 8.000.000.000 đồng Bằng chữ : Tảm tỷ đồng Mệnh giá cổ phần : 10.000 đồng Tổng số cổ phần : 4.
+                                            Người đại diện theo pháp luật của công ty * Họ và tên : NGÔ HỞN ĐÌNH Giới tính : Nam Chức danh : Giám đốc Sinh ngày : 25/07/1984 Dân tộc : Hoa Quốc tịch : Việt Nam Loại giấy tờ chứng thực cá nhân : Chứng minh
+                                            nhân dân Số giấy chứng thực cá nhân : 023692354 Ngày cấp : 23/06/2005 Nơi cấp : Công an Thành phố Hồ Chí Minh Nơi đăng ký hộ khẩu thường trú ; 1442/46 đường 3/2 , Phường 2 , Quận 11 , Thành phố Hồ Chí Minh ,
+                                            Việt Nam Chỗ ở hiện tại : 1442/46 đường 3/2 , Phường 2 , Quận 11 , Thành phố Hồ Chí Minh , Việt Nam
+                                        </p>
+                                    </div>
+                                    <!-- /.row (main row) -->
+                                </div>
+                            </div>
+                            <!-- /.container-fluid -->
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ./DeleteForm-->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+</body>
+
+</html>
+
+</html>
